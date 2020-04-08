@@ -1,0 +1,11 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Sports tennis = new Tennis("Racket", 2, true);
+        System.out.println("Tennis:\n" + tennis);
+        System.out.println();
+        Sports soccer = new Soccer("Soccer ball", 11, 10);
+        System.out.print("Soccer:\n" + soccer);
+    }//end of main method
+}//end of class
