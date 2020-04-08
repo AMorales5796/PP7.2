@@ -1,0 +1,31 @@
+public abstract class Sports
+{
+    //Instansiate variables
+    protected String equipment;
+    protected int playersPerTeam;
+
+    //Constructor
+    public Sports(String equipment, int playersPerTeam)
+    {
+        this.equipment = equipment;
+        this.playersPerTeam = playersPerTeam;
+    }//end of constructor
+    
+    //Getters
+    public String getEquipment()
+    {
+        return equipment;
+    }//end of equipment getter
+    public int playersPerTeam()
+    {
+        return playersPerTeam;
+    }//end of playersPerTeam getter
+
+    //Brain Methods
+    public String toString()
+    {
+        String output = "Equipment: " + equipment;
+        output+="\nPlayers per team: "+ playersPerTeam;
+        return output;
+    }//end of to String
+}//end of abstract class
