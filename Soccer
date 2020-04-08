@@ -1,0 +1,27 @@
+public class Soccer extends Sports
+{
+    //Instansiate variables
+    private int goalsScored;
+
+    //Constructor
+    public Soccer(String equipment, int playersPerTeam, int goalsScored)
+    {
+        super(equipment, playersPerTeam);
+        this.goalsScored = goalsScored;
+    }//end of constructor
+
+    //Getters
+    public int getScore()
+    {
+        return goalsScored;
+    }//end of score getter
+
+    //Brain Methods
+    public String toString()
+    {
+        String output = "";
+        output += super.toString();
+        output += "\nGoals scored: " + goalsScored;
+        return output;
+    }//end of toString
+}//end of class
