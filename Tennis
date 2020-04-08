@@ -1,0 +1,26 @@
+public class Tennis extends Sports
+{   
+    //Instansiate variables
+    private boolean racketIsBig;
+
+    //Constructor
+    public Tennis(String equipment, int playersPerTeam, boolean racketIsBig)
+    {
+        super(equipment, playersPerTeam);
+        this.racketIsBig=racketIsBig;
+    }//end of constructor
+
+    //Getters
+    public boolean getRacketSize()
+    {
+        return racketIsBig;
+    }//ebd of racketIsBig getter
+
+    //Brain Methods
+    public String toString()
+    {
+        String output="";
+        output += super.toString()+"\nTennis racket big?: "+racketIsBig;
+        return output;
+    }//end of toString
+}//end of class
